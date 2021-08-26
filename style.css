@@ -1,0 +1,181 @@
+/* ========= Menu Link CSS ======== */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header{
+    background-color: #a55eea;
+}
+.header-logo img{
+    width: 100px;
+}
+
+/* ======== Header Menu Section CSS ======== */
+
+.header-menu ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+.header-menu ul li{
+    display: inline-block;
+}
+.header-menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    line-height: 35px;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+}
+.header-menu ul li a:hover{
+     background-color: #8f45da; 
+}
+.header-menu ul li a::before{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #eb3b5a;
+    border-left: 3px solid #eb3b5a;
+    z-index: -1;
+    transition: .5s;
+    opacity: 0;
+}
+.header-menu ul li a::after{
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #eb3b5a;
+    border-right: 3px solid #eb3b5a;
+    z-index: -1;
+    transition: .5s;
+    opacity: 0;
+}
+.header-menu ul li a:hover:before,.header-menu ul li a:hover:after{
+    height: 65%;
+    width: 50%;
+    opacity: 1;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-image: url(./Image/banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    position: relative;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.banner-text h3{
+    background-color: rgba(129, 88, 159, 0.466);
+    display: inline-block;
+    padding: 10px;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 30px;
+}
+.banner-text p{
+    display: inline-block;
+    background-color: rgba(85, 230, 194, 0.39);
+    color: #182C61;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+.banner-text a{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* ======== Teem Section CSS ======== */
+.teem{
+    background-color: #CAD3C8;    
+}
+.teem-contant img{
+    width: 200px;
+    margin-bottom: 10px;
+}
+.teem-contant a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ========= Service Section CSS ======== */
+
+.service{
+    background-color: #ced6e0;
+}
+.card span{
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    margin: auto;
+    background-color: #B33771;
+    border-radius: 35px 5px  35px 5px;
+    margin-top: 20px;
+}
+
+/* ======== About Section CSS ======== */
+
+.about{
+    background-color: #f7f1e3;
+}
+.about-image img{
+    width: 250px;
+}
+
+/* ======== Contact Section CSS ======== */
+
+.contact{
+    background-color: #d1ccc0;
+}
+
+/* ======== Footer Section CSS ======== */
+
+.footer{
+    background-color: #40407a;
+}
+.footer-left h5{
+    color: #f8c291;
+}
+.footer-left h6{
+    color: #e58e26;
+}
+.footer-right ul{
+    list-style: none;
+}
+.footer-right ul li{
+    display: inline-block;
+}
+.footer-right ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 15px;
+    color: #78e08f;
+    transition: .5s;
+}
+.footer-right ul li a:hover{
+    color: #e55039;
+}
